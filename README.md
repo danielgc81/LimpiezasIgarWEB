@@ -18,9 +18,9 @@ Galería: Imágenes de nuestros trabajos realizados.
 El sitio web está diseñado para ser responsive, asegurando una experiencia óptima en dispositivos móviles, tablets y ordenadores.
 
 Tecnologías Utilizadas
-HTML5: Estructura del contenido.
+HTML5: Estructura del contenido, aplicación de la metodología BEM.
 
-CSS3: Estilos y diseño responsive, Aplicación de la metodología BEM.
+CSS3: Estilos y diseño responsive.
 
 JavaScript: Interactividad y funcionalidades dinámicas.
 
