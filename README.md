@@ -7,9 +7,9 @@ Este repositorio contiene la estructura y el contenido de la página web de Limp
 
 Inicio: Presentación de la empresa y sus valores.
 
-Servicios: Descripción detallada de los servicios de limpieza que ofrecemos.
-
 ¿Quiénes Somos?: Información sobre nuestra historia, equipo y compromiso con la calidad.
+
+Servicios: Descripción detallada de los servicios de limpieza que ofrecemos.
 
 Contacto: Formulario de contacto y detalles para ponerse en contacto con nosotros.
 
@@ -18,7 +18,7 @@ Galería: Imágenes de nuestros trabajos realizados.
 El sitio web está diseñado para ser responsive, asegurando una experiencia óptima en dispositivos móviles, tablets y ordenadores.
 
 Tecnologías Utilizadas
-HTML5: Estructura del contenido.
+HTML5: Estructura del contenido, aplicación de la metodología BEM.
 
 CSS3: Estilos y diseño responsive.
 
