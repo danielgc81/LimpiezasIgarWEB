@@ -1,5 +1,5 @@
 :root {
-   font-family: "Bricolage Grotesque";
+   font-family: "Bricolage Grotesque", sans-serif;
    --color-principal: #48ba05;
    --color-secundario: #fdfe01;
 }
@@ -11,15 +11,23 @@
 /* Estilos header*/
 .header {
    min-width: 100%;
+   max-height: 150px;
    height: auto;
    position: sticky;
    top: 0;
    background-color: var(--color-principal);
+   z-index: 10;
+}
+
+.scroll__line {
+   height: 6px;
+   /* El valor del width cambiara mediante JS segun el scroll de la página */
+   background-color: var(--color-secundario);
 }
 
 .header__wrapper {
    min-width: 100%;
-   min-height: 150px;
+   min-height: 120px;
    height: auto;
 
    display: flex;
@@ -29,11 +37,11 @@
 }
 
 .header__img {
-   width: 170px;
+   width: 150px;
 }
 
 .header__navigation {
-   flex-basis: 50%;
+   flex-basis: 45%;
 }
 
 .navigation__list {
@@ -59,5 +67,112 @@
 }
 
 .navigation__option:hover .navigation__link {
+   color: var(--color-secundario);
+}
+
+/* Estilos Main */
+.main__content {
+   min-width: 100%;
+}
+
+.main__presentation {
+   min-width: 100%;
+   height: 86.5dvh;
+
+   background-image: url("../src/img/img_fondo_inicio.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.presentation__info {
+   position: relative;
+   max-width: 50%;
+   margin: 0 auto;
+   top: 25%;
+}
+
+.presentation__title {
+   color: var(--color-secundario);
+   font-size: 4.2rem;
+   text-align: center;
+   margin-bottom: 1.5rem;
+   text-transform: uppercase;
+   animation: cambioColor 10s infinite;
+}
+
+@keyframes cambioColor {
+   0% {
+      color: var(--color-secundario);
+   }
+   50% {
+      color: var(--color-principal);
+   }
+   100% {
+      color: var(--color-secundario);
+   }
+}
+
+.presentation__text {
+   color: #fff;
+   font-size: 1.5rem;
+   margin-bottom: 2.5rem;
+   text-align: center;
+}
+
+.presentation__link {
+   position: relative;
+   left: 39%;
+}
+
+.presentation__button {
+   border: 3px solid #fff;
+   background-color: transparent;
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 1rem;
+   border-radius: 5rem;
+   padding: 1rem 3.5rem;
+   cursor: pointer;
+   transition: all 300ms ease-in;
+   animation: animacionBoton 2s infinite;
+}
+
+.presentation__button:hover {
+   border: 3px solid var(--color-secundario);
+   background-color: var(--color-secundario);
+   color: var(--color-principal);
+}
+
+@keyframes animacionBoton{
+   0%{
+      transform: scale(1,1);
+   }
+   70% {
+      transform: scale(1.05,1.05);
+   }
+   100% {
+      transform: scale(1,1);
+   }
+}
+
+.presentation__contact-info {
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-around;
+
+   font-size: 1.5rem;
+   color: #fff;
+   width: 100%;
+   position: absolute;
+   bottom: 10px;
+}
+
+.link {
+   color: #fff;
+   text-decoration: none;
+   transition: all 300ms ease-in;
+}
+
+.link:hover {
    color: var(--color-secundario);
 }
