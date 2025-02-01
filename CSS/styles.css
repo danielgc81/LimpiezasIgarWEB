@@ -134,7 +134,7 @@
    padding: 1rem 3.5rem;
    cursor: pointer;
    transition: all 300ms ease-in;
-   animation: animacionBoton 2s infinite;
+   animation: animacionBoton 2s infinite ease-in-out;
 }
 
 .presentation__button:hover {
@@ -175,4 +175,116 @@
 
 .link:hover {
    color: var(--color-secundario);
+}
+
+/*Estilos de la eccion de servicios*/
+
+.main__services {
+   min-width: 100%;
+   min-height: 45dvh;
+}
+
+.services__info {
+   max-width: 55%;
+   margin: 0 auto;
+}
+
+.services__title {
+   margin-top: 2.5rem;
+   color: var(--color-principal);
+   font-size: 3rem;
+   text-align: center;
+   margin-bottom: 2rem;
+   text-transform: uppercase;
+}
+
+.services__options {
+   display: flex;
+   justify-content: center;
+}
+
+.services__service {
+   flex-basis: 30%;
+   margin: 0 15px;
+   border-radius: 0.5rem;
+   min-height: 300px;
+   cursor: pointer;
+   box-shadow: 5px -5px 6px #ccc;
+}
+
+.service__glass {
+   background-image: url("../src/img/limpieza-cristales.png");
+   background-size: cover;
+}
+.service__community {
+   background-image: url("../src/img/limpieza-espacios-publicos.png");
+   background-size: cover;
+}
+.service__private {
+   background-image: url("../src/img/limpieza-particulares.png");
+   background-size: cover;
+}
+
+.service__title {
+   color: #fff;
+   text-align: center;
+}
+
+.service__text {
+   color: #fff;
+   font-size: 0.8rem;
+   text-align: center;
+   margin: 0.5rem 1rem 1rem 1rem;
+}
+
+.hidden {
+   display: none;
+}
+
+.services__service:hover .hidden {
+   display: block;
+}
+
+.services__wrapper {
+   width: 100%;
+   height: 100%;
+   border-radius: 0.5rem;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   transition: all 300ms ease-in;
+}
+
+.services__service:hover .services__wrapper {
+   background-color: #2226;
+}
+
+.service__anchor {
+   text-decoration: none;
+}
+
+.service__link {
+   position: relative;
+   left: 35%;
+}
+
+.service__button {
+   border: 3px solid var(--color-principal);
+   background-color: transparent;
+   color: var(--color-principal);
+   text-transform: uppercase;
+   font-size: 1rem;
+   border-radius: 5rem;
+   padding: 1rem 3.5rem;
+   margin: 3.5rem 0 4rem 0;
+   cursor: pointer;
+   transition: all 300ms ease-in;
+   animation: animacionBoton 2s infinite ease-in-out;
+}
+
+.service__button:hover {
+   border: 3px solid var(--color-secundario);
+   background-color: var(--color-secundario);
+   color: var(--color-principal);
 }
