@@ -21,6 +21,17 @@
    }
 }
 
+@keyframes show2 {
+   from {
+      opacity: 0;
+      scale: 50%;
+   }
+   to {
+      opacity: 1;
+      scale: 100%;
+   }
+}
+
 /* Estilos header*/
 .header {
    min-width: 100%;
@@ -343,16 +354,16 @@
    color: var(--color-principal);
    display: flex;
    border-radius: 10px;
-   view-timeline-name: --service;
+   view-timeline-name: --review;
    view-timeline-axis: block;
-   animation-timeline: --service;
-   animation-name: show;
+   animation-timeline: --review;
+   animation-name: show2;
    animation-range: entry 5% cover 20%;
    transition: all 300ms ease-in;
 }
 
 .reviews__review:hover {
-   transform: scale(1.05,1.05);
+   transform: scale(1.03,1.03);
 }
 
 .review__img-customer > img{
