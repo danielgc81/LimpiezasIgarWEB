@@ -200,7 +200,7 @@
    color: var(--color-secundario);
 }
 
-/*Estilos de la eccion de servicios*/
+/*Estilos de la seccion de servicios*/
 
 .main__services {
    min-width: 100%;
@@ -294,7 +294,7 @@
 
 .service__link {
    position: relative;
-   left: 35%;
+   left: 34%;
 }
 
 .service__button {
@@ -315,4 +315,84 @@
    border: 3px solid var(--color-secundario);
    background-color: var(--color-secundario);
    color: var(--color-principal);
+}
+
+/* Estilos de las Reseñas*/
+.main__reviews {
+   min-height: 88dvh;
+   background-image: url("../src/img/reseñas-fondo.png");
+   background-size: cover;
+   background-position: 0 -200px;
+   background-repeat: no-repeat;
+}
+
+.main__reviews-container {
+   max-width: 100%;
+   min-height: 88dvh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.reviews__review {
+   max-width: 50%;
+   max-height: 200px;
+   border: 3px solid var(--color-principal);
+   background-color: var(--color-secundario);
+   color: var(--color-principal);
+   display: flex;
+   border-radius: 10px;
+   view-timeline-name: --service;
+   view-timeline-axis: block;
+   animation-timeline: --service;
+   animation-name: show;
+   animation-range: entry 5% cover 20%;
+   transition: all 300ms ease-in;
+}
+
+.reviews__review:hover {
+   transform: scale(1.05,1.05);
+}
+
+.review__img-customer > img{
+   max-width: 150px;
+   min-height: 200px;
+   object-fit: cover;
+   border-radius: 7px;
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+   border-right: 3px solid var(--color-principal);
+}
+
+.review__person {
+   padding: 20px;
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   align-items: center;
+   min-height: 100%;
+}
+
+.review__text {
+   font-size: 1.2rem;
+   text-align: center;
+}
+
+.review__user-name {
+   font-size: 1.5rem;
+   font-weight: 800;
+}
+
+.review__user-name:hover {
+   text-decoration: underline;
+}
+
+.review__five--stars {
+   position: absolute;
+   width: 8rem;
+   bottom: -8px;
+   right: 30px;
 }
