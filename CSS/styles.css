@@ -407,3 +407,141 @@
    bottom: -8px;
    right: 30px;
 }
+
+/* Estilos del footer */
+
+.footer {
+   min-height: 30dvh;
+   background-color: var(--color-principal);
+   display: flex;
+   justify-content: center;
+}
+
+.footer__wrapper {
+   position: relative;
+   min-width: 60%;
+   display: flex;
+   flex-direction: column;
+}
+
+.footer__links {
+   display: flex;
+   padding: 2rem 0;
+   border-bottom: 2px solid var(--color-secundario);
+}
+
+.footer__nav-footer {
+   flex-basis: 40%;
+   color: #fff;
+}
+
+.nav-footer__title {
+   font-size: 1.4rem;
+   margin-bottom: 1rem;
+}
+
+.nav-footer__option {
+   margin-bottom: 0.8rem;
+}
+
+.nav-footer__link {
+   color: #fff;
+   text-decoration: none;
+   transition: all 300ms ease-in;
+}
+
+.nav-footer__link:hover {
+   color: var(--color-secundario);
+}
+
+.nav-footer__list {
+   list-style: none;
+}
+
+.footer__services-footer {
+   flex-basis: 40%;
+   color: #fff;
+}
+
+.services-footer__title {
+   font-size: 1.4rem;
+   margin-bottom: 1rem;
+}
+
+.services-footer__option {
+   margin-bottom: 0.8rem;
+}
+
+.services-footer__link {
+   color: #fff;
+   text-decoration: none;
+   transition: all 300ms ease-in;
+}
+
+.services-footer__link:hover {
+   color: var(--color-secundario);
+}
+
+.services-footer__list {
+   list-style: none;
+}
+
+.footer__social-media {
+   position: absolute;
+   right: 0;
+   top: 23%;
+}
+
+.footer__social-media ul {
+   text-align: center;
+   display: flex;
+   list-style: none;
+}
+
+.footer__social-media ul li {
+   height: 3rem;
+   width: 3rem;
+   font-size: 1.8rem;
+   line-height: 3.2rem;
+   margin-left: 0.8rem;
+   opacity: .9;
+   opacity: 0.9;
+   border-radius: 50%;
+   transition: all 300ms ease;
+}
+
+.icon {
+   color: #fff;
+}
+
+.footer__social-media ul li:hover {
+   background-color: #fff2;
+   opacity: 1;
+}
+
+.footer__company-info {
+   min-width: 100%;
+   display: flex;
+   justify-content: space-around;
+   padding: 2rem 0;
+}
+
+.img-container__logo {
+   max-width: 90%;
+}
+
+.footer__schedule {
+   color: #fff;
+   margin-left: 1rem;
+   margin-right: 2rem;
+}
+
+.footer__schedule > p {
+   margin-bottom: 3.1rem;
+}
+
+iframe {
+   max-width: 100%;
+   height: 200px;
+   border-radius: 10px;
+}
