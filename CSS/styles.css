@@ -545,3 +545,26 @@ iframe {
    height: 200px;
    border-radius: 10px;
 }
+
+.aboutus__description {
+   max-width: 50%;
+   line-height: 1.5rem;
+   position: relative;
+   margin: 0 auto;
+   margin-top: 3rem;
+   margin-bottom: 3rem;
+}
+
+.aboutus__text {
+   margin-bottom: 3rem;
+   color: #222;
+}
+
+.aboutus__link {
+   color: #222;
+   transition: all 300ms ease-in;
+}
+
+.aboutus__link:hover {
+   color: var(--color-principal);
+}
