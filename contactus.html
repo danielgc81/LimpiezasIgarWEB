@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="src/img/logo_empresa.png">
+   <link rel="stylesheet" href="src/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+   <link rel="stylesheet" href="CSS/styles.css">
+   <title>Limpiezas Igar - Limpieza Top 1% Mundial</title>
+</head>
+<body>
+   <header class="header">
+      <div class="header__wrapper">
+         <div class="header__img-container">
+            <img src="src/img/logo_empresa.png" alt="Logo Limpiezas Igar" class="header__img">
+         </div>
+         <nav class="header__navigation">
+            <ul class="navigation__list">
+               <li class="navigation__option">
+                  <a href="index.html" class="navigation__link">Inicio</a>
+               </li>
+               <li class="navigation__option">
+                  <a href="aboutus.html" class="navigation__link">¿Quienes Somos?</a>
+               </li>
+               <li class="navigation__option">
+                  <a href="services.html" class="navigation__link">Servicios</a>
+               </li>
+               <li class="navigation__option">
+                  <a href="#" class="navigation__link">Contactanos</a>
+               </li>
+               <li class="navigation__option">
+                  <a href="gallery.html" class="navigation__link">Galeria</a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+   <main class="main__form">
+      <div class="main__form-blurry">
+         <div class="main__form-container">
+            <h1 class="form__title">
+               Contáctanos
+            </h1>
+            <form action="PHP/index.php" method="post" class="form">
+               <div class="form__name-lastname">
+                  <div class="name__div flex">
+                     <label for="name">Nombre</label>
+                     <input type="text" class="input__name" id="name" name="name">
+                  </div>
+                  <div class="lastname__div flex">
+                     <label for="lastname">Apellidos</label>
+                     <input type="text" class="input__lastname" id="lastname" name="lastname">
+                  </div>
+               </div>
+               <div class="form__email">
+                  <label for="email">Email *</label>
+                  <input type="email" class="input__email" id="email" name="email" required>
+               </div>
+               <div class="form__message">
+                  <label for="message">Escribe tu mensaje *</label>
+                  <textarea name="message" id="message" class="textarea__message" required></textarea>
+               </div>
+               <div class="form__submit">
+                  <input type="submit" value="Enviar" class="input__submit">
+                  <p class="thankyou">!Gracias por tu mensaje¡</p>
+               </div>
+            </form>
+         </div>
+      </div>
+   </main>
+</body>
+</html>
