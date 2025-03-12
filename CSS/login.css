@@ -8,3 +8,115 @@
    margin: 0;
    scroll-behavior: smooth;
 }
+
+body {
+   background-image: linear-gradient(var(--color-secundario) 50%, var(--color-principal));
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100dvh;
+}
+
+.form__wrapper {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   min-width: 55%;
+}
+
+.register__form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   max-width: 30%;
+   background-color: var(--color-principal);
+}
+
+.register__form {
+   min-width: 25rem;
+   padding: 12px 24px;
+   border-radius: 6px;
+   box-shadow: 5px 0px 8px #111;
+}
+
+.register__section {
+   margin-top: 12px;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 1rem;
+}
+
+.register__input {
+   background-color: transparent;
+   margin-top: 5px;
+   border: none;
+   border-left: 2px solid #fdfe01;
+   border-bottom: 2px solid #fdfe01;
+   color: #fff;
+   border-bottom-left-radius: 5px;
+   padding: 6px 12px;
+}
+
+.register__input:focus {
+   outline: none;
+}
+
+.register__input::placeholder {
+   color: #f5f5f5;
+}
+
+.register__label {
+   color: #fff;
+}
+
+.register__title {
+   text-transform: uppercase;
+   color: #fff;
+   font-size: 1.5rem;
+   text-align: center;
+   margin-bottom: 1.2rem;
+   margin-top: 1.2rem;
+}
+
+.contact-info {
+   position: absolute;
+   min-width: 100%;
+   display: flex;
+   justify-content: space-around;
+   bottom: 1.5rem;
+   left: 0;
+}
+
+.register__submit {
+   background-color: transparent;
+   color: #fff;
+   border: 2px solid #fff;
+   max-width: 25%;
+   padding: 6px 12px;
+   border-radius: 25px;
+   cursor: pointer;
+   align-self: center;
+   transition: all  300ms ease-in;
+}
+
+.register__submit:hover {
+   background-color: var(--color-secundario);
+   border: 2px solid var(--color-secundario);
+   color: #48ba05;
+}
+
+.register__submit:active {
+   transform: scale(.9);
+}
+
+.link {
+   color: #fff;
+   text-decoration: none;
+   font-size: 1.3rem;
+   transition: color 300ms ease-in;
+}
+
+.link:hover {
+   color: var(--color-secundario);
+}

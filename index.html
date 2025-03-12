@@ -8,21 +8,23 @@
    <link rel="stylesheet" href="CSS/login.css">
 </head>
 <body>
-   <form action="PHP/index.php" class="register__form" method="post">
-      <h1 class="register__title">Formulario de Registro</h1>
-      <section class="register__section">
-         <label for="username" class="register__label">Nombre de Usuario</label>
-         <input type="text" name="username" placeholder="Nombre de Usuario" id="username" required class="register__input input--username">
-      </section>
-      <section class="register__section">
-         <label for="password" class="register__label">Contraseña</label>
-         <input type="password" name="password" placeholder="Nombre de Usuario" id="password" required class="register__input input--password">
-      </section>
-      <section class="register__section">
-         <input type="submit" value="Registrarse" class="register__submit">
-      </section>
+   <div class="form__wrapper">
       <img src="src/img/logo_empresa.png" alt="Logo de Empresa">
-   </form>
+      <form action="PHP/index.php" class="register__form" method="post">
+         <h1 class="register__title">Formulario de Registro</h1>
+         <section class="register__section">
+            <label for="username" class="register__label">Nombre de Usuario</label>
+            <input type="text" name="username" placeholder="Nombre de Usuario" id="username" required class="register__input input--username">
+         </section>
+         <section class="register__section">
+            <label for="password" class="register__label">Contraseña</label>
+            <input type="password" name="password" placeholder="Contraseña" id="password" required class="register__input input--password">
+         </section>
+         <section class="register__section">
+            <input type="submit" value="Registrarse" class="register__submit">
+         </section>
+      </form>
+   </div>
    <div>
       <div class="contact-info">
          <p class="contact-info__phone">
