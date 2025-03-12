@@ -1,0 +1,10 @@
+:root {
+   font-family: "Bricolage Grotesque", sans-serif;
+   --color-principal: #48ba05;
+   --color-secundario: #fdfe01;
+}
+* {
+   padding: 0;
+   margin: 0;
+   scroll-behavior: smooth;
+}
