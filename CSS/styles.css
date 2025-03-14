@@ -116,6 +116,14 @@
    top: 25%;
 }
 
+.welcome__message {
+   color: #fff;
+   font-size: 1.2rem;
+   text-align: center;
+   text-transform: uppercase;
+   margin-bottom: 0.6rem;
+}
+
 .presentation__title {
    color: var(--color-principal);
    font-size: 4.2rem;
