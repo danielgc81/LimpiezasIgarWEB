@@ -1,3 +1,11 @@
+<?php
+   session_start();
+
+   if (isset($_SESSION['username'])) {
+      $username = $_SESSION['username'];
+   }
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -39,6 +47,9 @@
    <main class="main__content">
       <section class="main__presentation">
          <div class="presentation__info">
+            <p class="welcome__message">
+               Bienvenido, <?php echo $username?>
+            </p>
             <h1 class="presentation__title"><span class="title__background">Limpiezas</span> Iga<span class="title__white">r</span></h1>
             <p class="presentation__text">
                En Limpiezas Igar, nos enorgullece ofrecer servicios de limpieza profesional de alta calidad en Mieres, Moreda, Cabañaquinta (Asturias) y sus alrededores. Somos una empresa líder en el sector de la limpieza, comprometidos con la satisfacción del cliente y la excelencia en cada trabajo que…
