@@ -1,35 +1,38 @@
 <?php
-
-<<<<<<< HEAD
-=======
    session_start();
 
->>>>>>> 67bef0acd300374e5f68654ef54bb965a1b1d3bb
-   $usuarios_web = [
-      "Gonzalo" => "1234",
-      "Garrido" => "1234"
-   ];
+   $host = "localhost";
+   $usuario = "root";
+   $contrasena = "";
+   $base_datos = "LimpiezasIgar";
 
-   $username = $_POST['username'];
-   $password = $_POST['password'];
+   $conexion = new mysqli($host, $usuario, $contrasena, $base_datos);
 
-<<<<<<< HEAD
-   $session_correcta = false;
-
-   foreach ($usuarios_web as $usuario => $pass) {
-      if ($username == $usuario && $password == $pass) {
-         $session_correcta = true;
-      }
-   }
-=======
-   foreach ($usuarios_web as $usuario => $pass) {
-      if ($username == $usuario && $password == $pass) {
-         $_SESSION['username'] = $username;
-         header("Location: ../start.php");
-      }
+   if ($conexion->connect_error) {
+      echo "Conexión fallida: " . $conexion->connect_error;
+   } else {
+      echo "Conexión exitosa";
    }
 
->>>>>>> 67bef0acd300374e5f68654ef54bb965a1b1d3bb
+   $nombre = $_POST['usuario'];
+   $password = $_POST['contraseña'];
+
+   $stmt = $conexion->prepare("SELECT * FROM usuarios WHERE nombre = ? AND contraseña = ?");
+   $stmt->bind_param("ss", $nombre, $password);
+   $stmt->execute();
+   $resultado = $stmt->get_result();
+
+   if ($resultado->num_rows > 0) {
+      $_SESSION['username'] = $nombre;
+      header("Location: ../start.php");
+   } else {
+      $stmt_insert = $conexion->prepare("INSERT INTO usuarios (nombre, contraseña) VALUES (?, ?)");
+      $stmt_insert->bind_param("ss", $nombre, $password);
+      $stmt_insert->execute();
+
+      $_SESSION['username'] = $nombre;
+      header("Location: ../start.php");
+   }
 ?>
 
 

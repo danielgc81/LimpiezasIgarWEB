@@ -39,6 +39,11 @@
                <li class="navigation__option">
                   <a href="gallery.html" class="navigation__link">Galeria</a>
                </li>
+               <li class="navigation__option">
+                  <form action="PHP/logout.php" method="post">
+                     <button>Cerrar Sesión</button>
+                  </form>
+               </li>
             </ul>
          </nav>
       </div>
